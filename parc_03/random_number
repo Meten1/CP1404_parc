@@ -1,0 +1,21 @@
+import random
+
+def main():
+    OUT_FILE = "temps_input.txt"
+    out_file = open(OUT_FILE, "a")
+    random_max_length = get_random_lenth()
+    random_intger_lenth = get_float_lenth()
+    random_number = get_random_number()
+    random_numbers = ""
+    integer_numbers = get_integer_numbers(random_number, )
+
+
+def get_random_number():
+    return random.randint(-200, 201)
+
+
+def get_random_lenth():
+    return random.randint(16,101)
+
+def get_intger_lenth():
+    return random.randint(1, 101)

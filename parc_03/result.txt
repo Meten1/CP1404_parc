@@ -1,0 +1,15 @@
+4  is Bad
+39 is Bad
+18 is Bad
+39 is Bad
+11 is Bad
+36 is Bad
+41 is Bad
+15 is Bad
+31 is Bad
+42 is Bad
+66 is Passable
+96 is Excellent
+54 is Passable
+54 is Passable
+33 is Bad

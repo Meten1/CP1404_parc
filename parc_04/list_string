@@ -1,0 +1,19 @@
+from collections import Counter
+
+def main():
+    str_list = []
+    input_str = str(input("Enter your string: "))
+    while input_str != "":
+        str_list.append(input_str)
+        input_str = str(input("Enter your string: "))
+
+    if len(str_list) != len(set(str_list)):
+        str_numbers = Counter(str_list)
+        print(f"Strings repeated: {[key for key, value in str_numbers.items() if value > 1]}")
+    else:
+        print("No repeated strings entered")
+
+
+
+
+main()

@@ -1,0 +1,7 @@
+
+list_1 = ["Jack", "Jill", "Harry"]
+list_2 = [(12, 4, 1999), (1, 1, 2000), (27, 3, 1982)]
+
+NAME_TO_BIRTH = dict(zip(list_1, list_2))
+print(NAME_TO_BIRTH)
+

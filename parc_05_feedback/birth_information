@@ -1,0 +1,24 @@
+
+max_input = 5
+NAME_TO_BIRTH = {}
+NAME_TO_AGE = {}
+year_now = 2022
+input_frequency = int(input("How many people do you want to enter: "))
+while input_frequency > 5:
+    print("Too many people!")
+    input_frequency = int(input("How many people do you want to enter: "))
+for i in range(1, input_frequency + 1):
+    name = str(input("Enter the name: "))
+    birth_information = str(input("Enter the birth (day, month, year): "))
+    NAME_TO_BIRTH[name] = birth_information
+
+for key, value in NAME_TO_BIRTH.items():
+    extract_year_list = value.strip()
+    extract_year = int(extract_year_list[-4:])
+    age = 2022 - extract_year
+    NAME_TO_AGE[key] = age
+
+for key, value in NAME_TO_AGE.items():
+    print(f"{key:5} : {value} years old")
+
+

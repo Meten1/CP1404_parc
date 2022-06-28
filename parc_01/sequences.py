@@ -1,4 +1,3 @@
-
 manu = "i\nii\niii\niv"
 min_number = int(input("Enter min_number: "))
 max_number = int(input("Enter max_number: "))
@@ -22,3 +21,6 @@ while choice != "iv":
     print()
     choice = str(input("Please choose: "))
 print("Finished.")
+
+
+

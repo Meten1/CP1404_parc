@@ -1,7 +1,3 @@
-
-
-
-
 items_number = int(input("Number of items: "))
 while items_number < 0:
     print("Invalid number of items!")

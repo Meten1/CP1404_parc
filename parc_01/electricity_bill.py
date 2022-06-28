@@ -1,12 +1,12 @@
 
 
-'''
-print("Electricity bill estimator")
-electricity_price = float(input("Enter cents per kWh: ")) * 0.01
-daily_use = float(input("Enter daily use in kWh: "))
-days = int(input("Enter number of billing days: "))
-print(f"Estimated bill: ${electricity_price * daily_use * days}")
-'''
+
+# print("Electricity bill estimator")
+# electricity_price = float(input("Enter cents per kWh: ")) * 0.01
+# daily_use = float(input("Enter daily use in kWh: "))
+# days = int(input("Enter number of billing days: "))
+# print(f"Estimated bill: ${electricity_price * daily_use * days}")
+
 
 TARIFF_11 = 0.244618
 TARIFF_31 = 0.136928

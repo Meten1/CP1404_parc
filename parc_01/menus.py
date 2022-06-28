@@ -1,6 +1,4 @@
-
-
-name = str(input("Enter name:"))
+Guidoname = str(input("Enter name:"))
 menu = "(H)ello\n(G)oodbye\n(Q)uit"
 print(menu)
 choice = str(input(""))

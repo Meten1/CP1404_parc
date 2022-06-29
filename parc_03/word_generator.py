@@ -14,20 +14,24 @@ def main():
 
     word_format = str(input("Enter the string format you want (for example, ccvc): ").lower())
     error_check = is_valid_format(word_format)
-    if error_check != False:
-        word = ""
-        for kind in word_format:
-            if kind == "c":
-                word += random.choice(CONSONANTS)
-            else:
-                word += random.choice(VOWELS)
-        print(word)
-    else:
-        print("Input error")
+    while error_check == False:
+        print("Inter error")
+        word_format = str(input("Enter the string format you want (for example, ccvc): ").lower())
+        error_check = is_valid_format(word_format)
+
+    word = ""
+    for kind in word_format:
+        if kind == "c":
+            word += random.choice(CONSONANTS)
+        else:
+            word += random.choice(VOWELS)
+    print(word)
 
 
 
 def is_valid_format(word_format):
+    if word_format == "":
+        return False
     for word in word_format:
         if word != "c" and word != "v":
             return False

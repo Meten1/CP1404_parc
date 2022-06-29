@@ -1,16 +1,17 @@
-
-
-
 def main():
     min_length = 6
-    chars = str(input("Enter your password: "))
-    while len(chars) < min_length:
-        print("Please enter a password of at least {} digits!".format(min_length))
-        chars = str(input("Enter your password: "))
-    the_password(chars)
+    password = get_password(min_length)
+    the_password(password)
 
-def the_password(chars):
-    for i in chars:
+def get_password(min_length):
+    input_password = str(input("Enter your password: "))
+    while len(input_password) < min_length:
+        print("Please enter a password of at least {} digits!".format(min_length))
+        input_password = str(input("Enter your password: "))
+    return input_password
+
+def the_password(password):
+    for char in password:
         print("*", end="")
 
 main()

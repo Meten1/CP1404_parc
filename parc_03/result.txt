@@ -13,3 +13,4 @@
 54 is Passable
 54 is Passable
 33 is Bad
+31 is Bad

@@ -7,4 +7,4 @@ while input_string != "":
     input_string = str(input("Enter the string: "))
 for key, value in STRING_TO_FREQUENCY.items():
     print(f"{key:{len(max(string_list))}} : {value}")
-    print(len(max(string_list)))
+

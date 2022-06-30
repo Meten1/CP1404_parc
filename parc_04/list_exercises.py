@@ -36,6 +36,7 @@ def main2():
     else:
         print("Access granted")
         numbers = []
+
         number = int(input("Number: "))
         while number >= 0:
             numbers.append(number)

@@ -1,0 +1,31 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        Button:
+            text: 'clear'
+            on_press: app.clear_textbox()
+            size_hint: None, None
+            size: 100, 100
+        TextInput:
+            id: input_score
+            text: ''
+
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Button:
+            text: 'Determine'
+            on_press: app.determine_score()
+            size_hint: None, None
+            size: 100, 100
+        Label:
+            text: 'Enter your score'
+            id: output_label
+            color: (1, 1, 0, 1)
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: '85-100 is HD   75-85 is D   65-75 is C   50-65 is P   less 50 is N'
+
